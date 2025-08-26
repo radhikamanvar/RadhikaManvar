@@ -1,0 +1,159 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*top bar style coding*/
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #efeee7;
+  letter-spacing: 0.2px;
+  line-height: 1.40rem;
+}
+.navbar {
+  width: 100%;
+  background: #2b2c30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px 18px 40px;
+  box-sizing: border-box;
+}
+nav a.nav-link {
+  text-decoration: none;
+  color: #efeee7;
+  margin-left: 24px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.75px;
+  transition: background 0.2s, color 0.2s;
+}
+nav a.nav-link.active {
+  color: #fff;
+  font-weight: 1000;
+  background: transparent;
+}
+nav a.nav-link:hover {
+  color: #474744;
+}
+
+/*background coloring*/
+.welcome-bg, .projects-bg, .resume-bg, .tutoring-bg {
+  background: #efeee7;
+}
+
+/*welcome title*/
+.welcome-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 14rem; 
+  color: #2b2c30;
+  margin-left: 5rem; 
+  margin-right: 5rem;
+  margin-top: 15rem;
+  text-align: center;
+  border-bottom: 3px solid #2b2c30;
+  font-weight: 100;
+  margin-bottom: 25rem
+}
+
+.subsection-title{
+  font-family: "Public Sans", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 8rem;
+  letter-spacing: 0.6rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.aboutme-text, .project-text p, .resume-text p, .resume-text ul, .resume-text li, .tutoring-text p{
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;  
+  margin-top:0.8rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.resume-text h2, .tutoring-text h2{
+  font-family: "Public Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.35rem;
+  font-weight: 550;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.tutoring-text h2, .tutoring-text p{
+  text-align:center;
+  margin-left: 10rem;
+  margin-right:10rem;
+}
+
+
+
+/*used for the tutoring section that has the tree points*/
+.stats-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* spacing between boxes */
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.stat-box {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+  border-right: 1px solid #ccc;
+}
+
+.stat-box:last-child {
+  border-right: none; /* remove border on last column */
+}
+
+.stat-box h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2b2c30; /* green */
+  margin-bottom: 0.5rem;
+}
+
+.stat-box h2 span {
+  font-size: 2rem; /* "points" is smaller */
+  display: block;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  font-family: "Public Sans", sans-serif;
+}
+
+.footer {
+  width: 100%;
+  background: #2b2c30;
+  color: #e3e8ff;
+  text-align: center;
+  padding: 18px 0 10px 0;
+  font-size: 1.25rem;
+  font-family: 'Playfair Display', serif;
+  margin-top: 15rem;
+  bottom: 0;
+  left: 0;
+}
