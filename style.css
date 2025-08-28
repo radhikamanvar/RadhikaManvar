@@ -25,6 +25,12 @@ html{
   align-items: center;
   padding: 18px 40px 18px 40px;
   box-sizing: border-box;
+
+  position: fixed; /* stick it at the top */
+  top: 0;          /* align with very top */
+  left: 0;         /* span full width */
+  z-index: 1000;   /* keep it above other content */
+
 }
 nav a.nav-link {
   text-decoration: none;
@@ -73,6 +79,8 @@ nav a.nav-link:hover {
   letter-spacing: 0.6rem;
   margin-left: 10rem;
   margin-right: 10rem;
+  position: relative;
+  padding-top: 120px;   /* pushes content down */
 }
 
 .aboutme-text, .project-text p, .resume-text p, .resume-text ul, .resume-text li, .tutoring-text p{
